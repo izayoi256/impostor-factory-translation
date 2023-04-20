@@ -1,0 +1,25 @@
+1. "Press Enter to continue"が表示されたらEnterキーを押下する。
+
+2. "1 : Converting RM maps to DMK maps"をはじめとする操作オプション一覧と"Choose an option :"が表示されることを確認する。 (以下、この画面を「トップメニュー」と呼称します)
+
+3. トップメニューで1を入力してEnterキーを押下する。
+
+4. "------- Converting RM maps to DMK maps --------"と"Choose an option :"が表示されたら1と入力してEnterキーを押下する。
+
+5. "* RM files converted in * seconds."と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+6. トップメニューに戻るので3を入力してEnterキーを押下する。
+
+7. "Processing done in * seconds."と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+8. "Dialogs file ./dialogues.txt created in * seconds."と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+9. "Warning ! Dialogues file have been modified ! Continue your work from this new file !"と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+10. トップメニューに戻るので4を入力してEnterキーを押下する。
+
+11. "------- Converting DMK maps to RM maps --------"と"Choose an option :"が表示されたら1と入力してEnterキーを押下する。
+
+12. "* RM files converted in * seconds."と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+13. トップメニューに戻るので0を入力してEnterキーを押下する。
