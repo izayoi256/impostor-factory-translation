@@ -1,0 +1,170 @@
+
+#############################################
+DreaMaker 4.9.3
+#############################################
+
+- program compiled with Ocra and Ruby 2, compatible with Windows 10 and faster
+
+
+#############################################
+DreaMaker 4.9
+#############################################
+
+- bug correction, can now compare 2 digits version number (such as 4.9 and 4.10)
+- compilation, creating the rar archive is automatic
+
+
+#############################################
+DreaMaker 4.9
+#############################################
+- function enabled : Step 4, dialogues too big are separated into several dialogues
+- Step 3, DreaMaker doesn't crash when the dialogues.txt file is not found
+- Step 3, automatic Step 3 + Step 2 to avoid "Step 3 problem"
+- translator, can create languages.csv file from code
+- Languages.csv, engrish version
+- go to website menu option
+- one page site
+- better error message when the user launches DMK in a non RM folder
+- can display accents
+- can display accents from dialogues.txt
+- better online stats
+- Step 3, bug correction, can now specify an empty name for a database element
+- Step 3, bug correction, nil value can no longer be affected to a Name+Description element in the database
+- Step 3, better error messages when there is a problem, displays the database element's id
+
+
+#############################################
+DreaMaker 4.8
+#############################################
+- compilation en Ruby 1.9
+- DMK 4.8 est 1,9 fois plus rapide que DMK 4.7
+- DMK 4.8 est 4,8 fois plus rapide que DMK 3.8 pour traiter un projet RMXP
+- Etape 3, correction du bug survenant lors de l'inclusion d'un slot avec textes vides
+- Etape 3, correction du bug d'ajout de mots non voulus dans les parties non dialogues en cas d'utilisation de mots réservés suivis d'un crochet (exemple : Gold])
+- suppression d'affichages de bugs de tests
+- version log now in English
+- new DreaMaker.ini
+- Step 1, all data base elements are checked, instead of only the first one
+- checking online the new versions
+- ASCII-8BIT management encoding for dialogues.txt
+- ressources are integrated in exe folders with Ocra
+- online stats for function uses
+- screen cleared before displaying errors
+
+
+
+#############################################
+DreaMaker 4.7
+#############################################
+
+- première release publique de la série 4
+
+
+#############################################
+DreaMaker 4.6
+#############################################
+
+- gestion correcte des fichiers de la BD utilisant la classe Table (Actors, Tilesets, etc...)
+
+
+#############################################
+DreaMaker 4.3
+#############################################
+
+- gestion des Warnings
+- gestion professionnelle des Erreurs
+- détection des maps et EC déjà traités
+- Etape 1, correction de l'affichage des noms de fichiers lors des traitements
+- Etape 1, gestion des fichiers DMK surnuméraires
+- Etape 2, détection de l'absence de dialogues
+- Etape 2, détection de l'absence du fichier dialogues
+- Etape 3, des maps DMK peuvent être manquantes
+- Etape 3, gestion des maps DMK manquantes
+- Etape 3, auto-exportation des dialogues avec sauvegarde
+- Etape 4, le traitement des EC a été ajouté
+- Etape 4, gestion du nombre maximal de lignes pour les dialogues
+- Etape 6, ajout du comptage du nombre de lignes et du nombre de mots pour chaque map
+- Etape 7, annulation de l'opération si aucun message n'est redimensionné
+- gestion du dossier Data absent
+- future retro compatibilité ajoutée
+- correction du bug des retours automatiques à la ligne du fichier dialogues.txt
+
+
+#############################################
+DreaMaker 4.2
+#############################################
+
+- ajout de gestion des erreurs lors de l'importation des dialogues
+- les erreurs sont maintenant numérotées
+- interface de modification des paramètres de redimensionnement des messages
+- les fichiers require.txt, language.txt et polices.dmk-dat sont maintenant inclus dans l'exe
+- suppression des fichiers présents dans le dossier DMK lors de l'étape 1
+
+
+#############################################
+DreaMaker 4.1
+#############################################
+
+- amélioration de la vérification de compatibilité
+- le programme continue la décompilation quand il tombe sur une map non compatible
+- interface d'affichage des paramètres de redimensionnement des messages
+- paramètres supplémentaires dans DreaMaker.ini.
+
+
+#############################################
+DreaMaker 4.0
+#############################################
+
+- refonte intégrale du code de façon professionnelle
+- vérification de la compatibilité bien plus sûre
+- les Evènements Communs sont gérés dans les trois premières étapes
+- RM2K/2003 non supporté
+- seulement en version pro
+- seulement en français
+- fichiers DreaMaker 3 non supportés
+- le projet est maintenant développé avec un IDE professionnel, Netbeans
+
+
+#############################################
+DreaMaker 3.8
+#############################################
+
+- dernière version de DreaMaker 3
+- disponible en 5 langues
+
+
+#############################################
+DreaMaker 3.0
+#############################################
+
+- reprise du projet, avec interface console
+- extraction du texte par décompilation, beaucoup moins d'erreurs
+- gestion des maps RMXP
+
+
+#############################################
+DreaMaker 2.1
+#############################################
+
+- jamais distribuée
+- interface graphique incroyablement plus développée
+- 45 scripts
+- 27 565 lignes de code
+
+
+#############################################
+DreaMaker 2.0
+#############################################
+
+- release avec interface graphique, permettant d'éditer tous les dialogues un à un
+- 3 scripts
+- 3 148 lignes de code
+
+
+#############################################
+DreaMaker v1.0
+#############################################
+
+- première release
+- 1 script
+- 1 446 lignes de code

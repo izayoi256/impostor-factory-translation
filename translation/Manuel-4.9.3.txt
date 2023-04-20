@@ -1,0 +1,194 @@
+
+Cette version de DMK est loin d'être terminée, mais elle est d'ores et déjà utilisable pour les projets RMXP. 
+Les projets RM2K / RM2K3 seront ajoutés prochainement, ainsi que toutes les fonctions présentes dans la 3.8.
+
+
+Les fonctions "désactivées" seront réimplémentées prochainement.
+
+
+
+
+
+
+
+------------------------------------------
+Sommaire
+-----------
+
+- Installation
+- Fonctionnement
+- Astuces
+
+
+
+
+------------------------------------------
+Installation
+-----------
+
+Placez DreaMaker.exe et les 3 dossiers bin, lib et src dans le dossier de votre jeu RMXP (avec Game.exe).
+Pour faire fonctionner DMK dans un autre projet, copiez / collez DreaMaker.exe et les 3 dossiers bin, lib et src dans le dossier de cet autre projet.
+
+
+
+Si vous avez déjà une version de DreaMaker installée :
+- incluez toutes vos modifications dans les fichiers RM (étape 3 et 4)
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+!! N'oubliez pas d'inclure vos modifications ou elles seront perdues !!
+
+Ensuite, supprimez les fichiers suivants :
+- DreaMaker.exe
+- DreaMaker.ini
+- polices.dmk-dat
+- Languages.csv
+- le dossier DMK
+
+Mettez le nouvel exécutable DreaMaker XP et ses fichiers dans le dossier de votre jeu et c'est bon.
+
+
+
+------------------------------------------
+Fonctionnement
+-----------
+
+
+Pour choisir une commande, tapez le numéro correspondant, et appuyez sur Entrée.
+
+
+Quelques explications sur l'ordre dans lequel effectuer les opérations.
+C'est facile, les opérations de base sont dans l'ordre : 1-2-3-4.
+
+
+
+
+
+1 : Décompiler les maps RM en maps DMK
+
+Décompile vos maps et les transforme en maps ".dmk", que DMK peut gérer.
+Notez que TOUTES les instructions des events sont décompilées, pas seulement les lignes de dialogues (c'est en partie pour ça que l'opération est si longue).
+Cela servira par la suite pour d'autres traitements : changer le nom d'une ressource du jeu par exemple.
+
+Vous pouvez choisir de décompiler uniquement les maps RM modifiées et ajoutées depuis la dernière décompilation, c'est beaucoup plus rapide.
+
+
+2 : Extraire les dialogues des maps DMK
+
+DMK parcourt toutes les maps dmk-map, et récupère les dialogues.
+Ensuite, DMK écrit ces dialogues dans un fichier, "dialogues.txt".
+
+****** ATTENTION ! ******
+Votre fichier dialogues.txt sera bien sûr remplacé !
+Faites une sauvegarde manuelle si vous souhaitez le conserver.
+
+
+3 : Inclure les dialogues dans les maps DMK
+
+DMK récupère le fichier "dialogues.txt", et modifie toutes les maps DMK pour inclure les nouveaux dialogues.
+
+****** ATTENTION ! ******
+Le fichier dialogues.txt est synchronisé après l'étape 3. Vous devez continuer votre travail à partir de dialogues.txt.
+Si vous continuez votre travail à partir d'un fichier précédent, vos maps seront désynchronisées d'avec le fichier dialogues.txt.
+
+Note : DMK ne corrompt jamais les fichiers. S'il y a un problème, le programme le signalera et passera aux dialogues suivants.
+
+
+
+4 : Compiler les maps DMK en maps RM
+
+Les maps DMK sont recompilées en maps RM.
+Vous pouvez choisir de ne recompiler que les maps DMK modifiées (par inclusion de texte) et ajoutées, ça va plus vite.
+
+****** ATTENTION ! ******
+Vos maps RM sont remplacées !
+Faites une copie de sauvegarde (dite sauvegarde manuelle) si vous souhaitez conserver une copie de vos maps ! (au cas où)
+
+
+5 : Créer un patch de dialogues
+(désactivé)
+
+Permet de créer un nouveau fichier dialogues contenant uniquement les modifications faites entre deux fichiers de dialogue.
+Ce patch sert à diminuer les traitements à effectuer, en remplaçant uniquement les messages modifiés.
+
+Après avoir modifié "dialogues.txt", sauvegardez-le sous le nom "dialogues-after.txt".
+Réextrayez les dialogues de vos maps pour obtenir les dialogues d'avant vos modifications.
+(vous pouvez aussi faire une copie du fichier txt avant de modifier vos dialogues pour aller plus vite)
+
+Le programme crée un patch entre le fichier "dialogues.txt" et dialogues-after.txt".
+
+|dialogues => dialogues_apres
+===============================> dialogues_patch
+
+
+Note : si vous avez déjà réinclu vos dialogues, pensez au fait que le patch est fait pour les gens qui ont l'ancienne version de votre jeu...
+Reprenez (ou téléchargez) l'ancienne version de votre jeu, extrayez les dialogues, et vous aurez votre fichier txt avant modifications.
+
+La création de patch gère les modifications de messages (lignes en plus, en moins, changements de lettres), ainsi que l'ajout (ajout de messages, d'events, de maps, etc...).
+
+
+
+6 : Pourcentage Maker
+(désactivé)
+
+Permet d'obtenir des statistiques telles que la superficie des maps du jeu, le nombre de mots moyen par message ou encore le pourcentage d'achèvement de votre jeu.
+Toutes les données obtenues sont vraies (certifiées à 99% par les plus grands organismes RPG Maker de chaque pays), et vont feront plaisir si vous aimez les chiffres. :)
+Le seul moyen sûr à 100% de connaître le pourcentage d'achèvement de votre jeu, c'est de le terminer. Au boulot !
+
+
+
+
+7 : Redimensionner les dialogues
+(désactivé)
+
+Permet de redimensionner les dialogues suivant une police et une taille de caractères.
+Tous les dialogues trop grands seront redimensionnés pour entrer dans les dimensions des boîtes de dialogue.
+
+La police et la taille sont spécifiables, en les tapant lorsque cela vous est demandé :
+nom_de_la_police * taille_de_la_police
+
+Les polices avec des espaces dans le nom sont gérés. N'oubliez simplement pas de mettre l'étoile "*" entre le nom de la police et sa taille.
+Exemples :
+- Arial * 18
+- Times New roman  *  22
+
+Respectez la casse ! Majuscules et minuscules !
+
+
+Les polices gérées sont les suivantes :
+- Arial 
+- Verdana 
+- Times New Roman
+
+Les tailles gérées sont entre 6 et 35.
+
+
+Le fichier dialogues.txt est copié (sauvegarde automatique) sous le nom dialogues-save.txt.
+Le contenu du fichier dialogues.txt est ensuite remplacé par les dialogues redimensionnés.
+
+
+
+0 : Quitter
+
+Pour quitter l'application.
+Appuyer sur Entrée sans taper de chiffre marche aussi.
+
+
+
+------------------------------------------
+Astuces
+-----------
+
+- Naviguer dans les options
+Plutôt que de taper 0 pour quitter ou pour retourner en arrière, vous pouvez appuyer sur Entrée sans donner de chiffre.
+
+Vous pouvez taper deux fois de suite sur Entrée, pour passer une pause et la prochaine automatiquement.
+
+
+- Accélérer les traitements
+Seuls les fichiers présents dans les dossiers data et DMK sont traités.
+
+Vous pouvez déplacer des dossiers en dehors de ces répertoires, ou placer DreaMaker dans un autre dossier avec uniquement les maps que vous souhaitez traiter.
+Vous pouvez aussi utiliser l'option "Traiter uniquement les fichiers modifiés", ce qui est de loin la meilleure option.
+
+
+ 
