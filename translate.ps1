@@ -11,12 +11,18 @@ if (!(Test-Path $rgssad)) {
   Copy-Item "..\${rgssad}" $rgssad;
 }
 
+Write-Host "`"Failed to extract: Data\lang\uk\Graphics\Pictures\TS menu End  .png`"というエラーは無視してください。";
 .\RPGMakerDecrypter-cli.exe $rgssad --output .;
 Copy-Item dialogues.dist.txt dialogues.txt -Force;
 Write-Host "この先は英語表示になります。同梱の`"DreaMaker操作手順.txt`"を読みながら操作してください。";
 Read-Host "Enterを押して続行";
 .\DreaMaker_XP-v4.9.3.exe;
-Remove-Item -Recurse -Force ..\Data, ..\Graphics;
+if (Test-Path "..\Data") {
+  Remove-Item -Recurse -Force ..\Data;
+}
+if (Test-Path "..\Graphics") {
+  Remove-Item -Recurse -Force ..\Graphics;
+}
 Move-Item Data ..;
 Move-Item Graphics ..;
 Copy-Item ..\mkxp.conf ..\mkxp.conf.bak;
