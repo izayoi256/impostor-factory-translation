@@ -12,16 +12,15 @@ if (!(Test-Path $rgssad)) {
 }
 
 .\RPGMakerDecrypter-cli.exe $rgssad --output .;
-Copy-Item dialogues.dist.txt dialogues.txt;
+Copy-Item dialogues.dist.txt dialogues.txt -Force;
 Write-Host "この先は英語表示になります。同梱の`"DreaMaker操作手順.txt`"を読みながら操作してください。";
 Read-Host "Enterを押して続行";
 .\DreaMaker_XP-v4.9.3.exe;
-Remove-Item -Recurse -Force ..\Data;
-Remove-Item -Recurse -Force ..\Graphics;
+Remove-Item -Recurse -Force ..\Data, ..\Graphics;
 Move-Item Data ..;
 Move-Item Graphics ..;
 Copy-Item ..\mkxp.conf ..\mkxp.conf.bak;
-Copy-Item ..\mkxp.dist.conf ..\mkxp.conf;
+Copy-Item ..\mkxp.dist.conf ..\mkxp.conf -Force;
 
 if (Test-Path "..\${rgssad}") {
   Move-Item "..\${rgssad}" "..\${rgssad}.bak";

@@ -1,6 +1,6 @@
 rgssad="Game.rgssad"
 
-cd translation
+cd translation || exit
 
 if [ ! -f "${rgssad}" ]; then
   if [ ! -f "../${rgssad}" ]; then
