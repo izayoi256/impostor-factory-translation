@@ -32,3 +32,4 @@
 - ツール:
   - [DreaMaker](https://www.rpg-maker.fr/index.php?page=forum&id=16279) by King Kadelfek (Marc Kruzik)
   - [RPGMakerDecrypter](https://github.com/uuksu/RPGMakerDecrypter) by uuksu (Mikko Uuksulainen)
+    - Thank you tyrone-sudeium as well for your advice to get rid of an error. 
