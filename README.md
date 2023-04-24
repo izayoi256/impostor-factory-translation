@@ -30,6 +30,6 @@
 
 - 翻訳及びMod化: Qwert (Shotaro Hama)
 - ツール:
-  - [DreaMaker](https://www.rpg-maker.fr/index.php?page=forum&id=16279) by King Kadelfek (Marc Kruzik)
-  - [RPGMakerDecrypter](https://github.com/uuksu/RPGMakerDecrypter) by uuksu (Mikko Uuksulainen)
+  - [DreaMaker](https://www.rpg-maker.fr/index.php?page=forum&id=16279) 4.9.3 by King Kadelfek (Marc Kruzik)
+  - [RPGMakerDecrypter](https://github.com/uuksu/RPGMakerDecrypter) 2.0.11 by uuksu (Mikko Uuksulainen)
     - Thank you tyrone-sudeium as well for your advice to get rid of an error. 
