@@ -1,25 +1,25 @@
-1. "Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+1. "Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-2. "1 : Converting RM maps to DMK maps"ã‚’ã¯ã˜ã‚ã¨ã™ã‚‹æ“ä½œã‚ªãƒ—ã‚·ãƒ§ãƒ³ä¸€è¦§ã¨"Choose an option :"ãŒè¡¨ç¤ºã•ã‚Œã‚‹ã“ã¨ã‚’ç¢ºèªã™ã‚‹ã€‚ (ä»¥ä¸‹ã€ã“ã®ç”»é¢ã‚’ã€Œãƒˆãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€ã¨å‘¼ç§°ã—ã¾ã™)
+2. "1 : Converting RM maps to DMK maps"‚ğ‚Í‚¶‚ß‚Æ‚·‚é‘€ìƒIƒvƒVƒ‡ƒ“ˆê——‚Æ"Choose an option :"‚ª•\¦‚³‚ê‚é‚±‚Æ‚ğŠm”F‚·‚éB (ˆÈ‰ºA‚±‚Ì‰æ–Ê‚ğuƒgƒbƒvƒƒjƒ…[v‚ÆŒÄÌ‚µ‚Ü‚·)
 
-3. ãƒˆãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§1ã‚’å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+3. ƒgƒbƒvƒƒjƒ…[‚Å1‚ğ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-4. "------- Converting RM maps to DMK maps --------"ã¨"Choose an option :"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰1ã¨å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+4. "------- Converting RM maps to DMK maps --------"‚Æ"Choose an option :"‚ª•\¦‚³‚ê‚½‚ç1‚Æ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-5. "* RM files converted in * seconds."ã¨"Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+5. "* RM files converted in * seconds."‚Æ"Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-6. ãƒˆãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«æˆ»ã‚‹ã®ã§3ã‚’å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+6. ƒgƒbƒvƒƒjƒ…[‚É–ß‚é‚Ì‚Å3‚ğ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-7. "Processing done in * seconds."ã¨"Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+7. "Processing done in * seconds."‚Æ"Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-8. "Dialogs file ./dialogues.txt created in * seconds."ã¨"Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+8. "Dialogs file ./dialogues.txt created in * seconds."‚Æ"Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-9. "Warning ! Dialogues file have been modified ! Continue your work from this new file !"ã¨"Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+9. "Warning ! Dialogues file have been modified ! Continue your work from this new file !"‚Æ"Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-10. ãƒˆãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«æˆ»ã‚‹ã®ã§4ã‚’å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+10. ƒgƒbƒvƒƒjƒ…[‚É–ß‚é‚Ì‚Å4‚ğ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-11. "------- Converting DMK maps to RM maps --------"ã¨"Choose an option :"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰1ã¨å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+11. "------- Converting DMK maps to RM maps --------"‚Æ"Choose an option :"‚ª•\¦‚³‚ê‚½‚ç1‚Æ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-12. "* RM files converted in * seconds."ã¨"Press Enter to continue"ãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+12. "* RM files converted in * seconds."‚Æ"Press Enter to continue"‚ª•\¦‚³‚ê‚½‚çEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
 
-13. ãƒˆãƒƒãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«æˆ»ã‚‹ã®ã§0ã‚’å…¥åŠ›ã—ã¦Enterã‚­ãƒ¼ã‚’æŠ¼ä¸‹ã™ã‚‹ã€‚
+13. ƒgƒbƒvƒƒjƒ…[‚É–ß‚é‚Ì‚Å0‚ğ“ü—Í‚µ‚ÄEnterƒL[‚ğ‰Ÿ‰º‚·‚éB
