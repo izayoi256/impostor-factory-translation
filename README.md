@@ -1,6 +1,8 @@
 # Impostor Factory 日本語化Mod
 
-これは[Impostor Factory](https://store.steampowered.com/app/1182620/Impostor_Factory/)を日本語化する非公式Modです。
+これは[Impostor Factory](https://store.steampowered.com/app/1182620/Impostor_Factory/)を日本語化するModです。
+
+制作元であるFreebird Gamesより翻訳の制作、配布の許諾を受けて公開しているものです。
 
 ## 動作確認済み環境
 
@@ -28,7 +30,8 @@
 
 ## クレジット
 
-- 翻訳及びMod化: Qwert (Shotaro Hama)
+- Impostor Factory © Freebird Games 2021
+- 翻訳及びMod化 © Qwert(Shotaro Hama) 2023
 - ツール:
   - [DreaMaker](https://www.rpg-maker.fr/index.php?page=forum&id=16279) 4.9.3 by King Kadelfek (Marc Kruzik)
   - [RPGMakerDecrypter](https://github.com/uuksu/RPGMakerDecrypter) 2.0.11 by uuksu (Mikko Uuksulainen)
