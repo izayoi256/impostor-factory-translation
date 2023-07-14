@@ -28,6 +28,11 @@
   - Windowsの場合: `translate.bat`を実行し、指示に従って操作してください。
   - Linuxの場合: `translate.sh`を実行し、指示に従って操作してください。
 
+## 関連プロジェクト
+
+- Paper Memories 日本語化: https://github.com/izayoi256/paper-memories-ja
+  -  To the Moon及びFinding ParadiseのDLCコミック
+
 ## クレジット
 
 - Impostor Factory © Freebird Games 2021
