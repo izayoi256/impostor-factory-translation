@@ -28,6 +28,14 @@
   - Windowsの場合: `translate.bat`を実行し、指示に従って操作してください。
   - Linuxの場合: `translate.sh`を実行し、指示に従って操作してください。
 
+# 不具合報告
+
+誤字、脱字、不具合があった際は、お手数ですが[@ilovenamichang](https://twitter.com/ilovenamichang)宛にお知らせいただくか、本リポジトリのIssuesにご報告ください。
+
+# 免責事項
+
+当パッチを利用して発生した、いかなる損害も責任を負いかねます。
+
 ## 関連プロジェクト
 
 - Paper Memories 日本語化: https://github.com/izayoi256/paper-memories-ja
