@@ -6,7 +6,7 @@
 
 ## 動作確認済み環境
 
-- Windows 10
+- Windows 10/11
 - Linux Mint 19.1 (Wine利用)
 
 ## システム要件
