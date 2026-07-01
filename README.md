@@ -28,6 +28,8 @@
 
 誤字、脱字、不具合があった際は、お手数ですが[@ilovenamichang](https://twitter.com/ilovenamichang)宛にお知らせいただくか、本リポジトリのIssuesにご報告ください。
 
+`translate.bat`実行時にエラーが出た場合は、Modを解凍したフォルダに生成される`translate.log`を報告時に添付していただけると助かります。
+
 # 免責事項
 
 当パッチを利用して発生した、いかなる損害も責任を負いかねます。
