@@ -23,3 +23,5 @@ Windows版のような自動化(インストール先の自動検出・DreaMaker
 6. `Game.rgssad` と `DreaMaker操作手順.txt` が同じディレクトリに入っていればOKです。 (以下の画像を参照してください)
 ![Mod反映準備完了](https://user-images.githubusercontent.com/1329505/233265748-d3d637f8-efdb-4fd1-9eeb-0c28178e7109.png)
 7. `translate.sh`を実行してください。途中でDreaMakerの操作画面が表示されるので、同梱の`DreaMaker操作手順.txt`を読みながら操作してください。
+
+エラーが出た場合は、ターミナルに表示された内容をコピーして、[README.md](README.md)の「不具合報告」の案内に従って報告時に貼り付けてください。
