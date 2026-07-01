@@ -6,9 +6,14 @@ cd translation || exit
 
 if [ ! -f "${rgssad}" ]; then
   if [ ! -f "../${rgssad}" ]; then
-    echo "Error: \"${rgssad}\"が見つかりません。Impostor Factoryのインストールディレクトリに設置してください。"
-    read -p "Enterを押して終了" _
-    exit 1
+    if [ -f "../${rgssad}.bak" ]; then
+      echo "適用済みのパッチを検出しました。元のデータを復元して再適用します..."
+      \cp "../${rgssad}.bak" "../${rgssad}"
+    else
+      echo "Error: \"${rgssad}\"が見つかりません。Impostor Factoryのインストールディレクトリに設置してください。"
+      read -p "Enterを押して終了" _
+      exit 1
+    fi
   fi
   \cp "../${rgssad}" "${rgssad}"
 fi
@@ -42,6 +47,7 @@ fi
 \cp -f ../mkxp.dist.conf ../mkxp.conf
 
 if [ -f "../${rgssad}" ]; then
+  rm -f "../${rgssad}.bak"
   mv "../${rgssad}" "../${rgssad}.bak"
 fi
 

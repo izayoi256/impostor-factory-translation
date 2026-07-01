@@ -31,7 +31,7 @@ function Find-ImpostorFactoryPath {
       $installDirMatch = [regex]::Match($manifestContent, '"installdir"\s*"([^"]+)"');
       if ($installDirMatch.Success) {
         $candidate = Join-Path $lib "steamapps\common\$($installDirMatch.Groups[1].Value)\Impostor Factory";
-        if (Test-Path (Join-Path $candidate "Game.rgssad")) {
+        if (Test-Path (Join-Path $candidate "Game.rgssad") -or Test-Path (Join-Path $candidate "Game.rgssad.bak")) {
           return $candidate;
         }
       }
@@ -61,8 +61,14 @@ try {
   }
 
   $gameRgssad = Join-Path $gamePath $rgssad;
+  $gameRgssadBak = "${gameRgssad}.bak";
   if (!(Test-Path $gameRgssad)) {
-    Exit-WithError "Error: `"${gameRgssad}`"が見つかりません。パスを確認してください。";
+    if (Test-Path $gameRgssadBak) {
+      Write-Host "適用済みのパッチを検出しました。元のデータを復元して再適用します...";
+      Copy-Item $gameRgssadBak $gameRgssad -Force;
+    } else {
+      Exit-WithError "Error: `"${gameRgssad}`"が見つかりません。パスを確認してください。";
+    }
   }
 
   Set-Location (Join-Path $scriptRoot "translation");
@@ -108,7 +114,10 @@ try {
   Copy-Item (Join-Path $scriptRoot "mkxp.dist.conf") $destConf -Force;
 
   if (Test-Path $gameRgssad) {
-    Move-Item $gameRgssad "${gameRgssad}.bak";
+    if (Test-Path $gameRgssadBak) {
+      Remove-Item $gameRgssadBak -Force;
+    }
+    Move-Item $gameRgssad $gameRgssadBak;
   }
 
   Stop-Transcript | Out-Null;
