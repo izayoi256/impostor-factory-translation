@@ -19,7 +19,7 @@
 1. Modをダウンロードして解凍してください。 [[ダウンロードリンク]](https://github.com/izayoi256/impostor-factory-translation/archive/refs/heads/master.zip)
 2. Steamで英語版のImpostor Factoryをインストールしてください。 [[ストアページ]](https://store.steampowered.com/app/1182620/Impostor_Factory/)
 3. 1で解凍したフォルダの中にある `translate.bat` を実行してください。
-   - ※ 実行環境によっては、以下のセキュリティ警告が表示される場合がありますが、問題ありませんので進めてください。
+   - ※ 有害なスクリプトは一切入れていませんが、実行環境によっては以下のセキュリティ警告が表示される場合があります。ご納得いただいた上で手順を進めてください。
    
    **①「発行元を確認できませんでした」という警告が出た場合**
    - **「実行」** をクリックしてください。
