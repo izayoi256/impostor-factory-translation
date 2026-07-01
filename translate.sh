@@ -23,7 +23,6 @@ fi
 
 if [ -f "../${rgssad}" ]; then
   mv "../${rgssad}" "../${rgssad}.bak"
-  exit 1
 fi
 
 read -p "日本語化が完了しました。Enterを押して終了"
