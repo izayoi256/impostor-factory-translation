@@ -1,8 +1,9 @@
 $ErrorActionPreference = "Stop";
 
-$scriptRoot = $PSScriptRoot;
+$resourcesRoot = $PSScriptRoot;
+$repoRoot = Split-Path $resourcesRoot -Parent;
 $rgssad = "Game.rgssad";
-$logPath = Join-Path $scriptRoot "translate.log";
+$logPath = Join-Path $repoRoot "translate.log";
 
 function Find-ImpostorFactoryPath {
   $appId = "1182620";
@@ -71,7 +72,7 @@ try {
     }
   }
 
-  Set-Location (Join-Path $scriptRoot "translation");
+  Set-Location (Join-Path $repoRoot "translation");
 
   if (!(Test-Path $rgssad)) {
     Copy-Item $gameRgssad $rgssad;
@@ -111,7 +112,7 @@ try {
 
   $destConf = Join-Path $gamePath "mkxp.conf";
   Copy-Item $destConf "${destConf}.bak" -ErrorAction SilentlyContinue;
-  Copy-Item (Join-Path $scriptRoot "mkxp.dist.conf") $destConf -Force;
+  Copy-Item (Join-Path $resourcesRoot "mkxp.dist.conf") $destConf -Force;
 
   if (Test-Path $gameRgssad) {
     if (Test-Path $gameRgssadBak) {

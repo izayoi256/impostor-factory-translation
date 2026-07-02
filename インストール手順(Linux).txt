@@ -1,0 +1,88 @@
+Impostor Factory 日本語化Mod
+Linux版 インストール手順 (Wine利用)
+
+Windows版のような自動化(インストール先の自動検出・DreaMakerの自動操作)は行われません。
+手動での操作が必要です。
+
+
+【動作確認済み環境】
+Linux Mint 19.1 (Wine利用)
+
+【システム要件】
+wine
+
+
+■ 手順
+
+1. Modをダウンロードして解凍してください。
+   ダウンロードリンク:
+   https://github.com/izayoi256/impostor-factory-translation/archive/refs/heads/master.zip
+
+2. Steamで英語版の Impostor Factory をインストールしてください。
+   ストアページ:
+   https://store.steampowered.com/app/1182620/Impostor_Factory/
+
+3. Steamクライアントで
+     ライブラリ → Impostor Factory → 歯車マーク → 管理 → ローカルファイルを閲覧
+   をクリックしてください。
+   (参考画像) https://user-images.githubusercontent.com/1329505/233041744-2e3549b5-3710-4125-b209-370f25e9409e.png
+
+4. 3の操作で表示された「Impostor Factory」ディレクトリを開いてください。「Game.rgssad」という
+   ファイルが見えていればOKです。
+
+5. 4の操作で開いたディレクトリに、1の操作で解凍したModの中身をすべて移動させてください。
+   「Game.rgssad」と、このファイル(インストール手順(Linux).txt)や「install-linux.sh」が
+   同じディレクトリに入っていればOKです。
+
+6. 「install-linux.sh」を実行してください。
+
+7. 実行すると、この先は英語表示になります。「RPGMakerDecrypter」によるゲームデータの解凍が
+   終わると、DreaMakerというツールの操作画面が表示されます。以下の手順の通りに操作してください。
+
+   7-1. "Press Enter to continue"が表示されたらEnterキーを押下する。
+
+   7-2. "1 : Converting RM maps to DMK maps"をはじめとする操作オプション一覧と
+        "Choose an option :"が表示されることを確認する。
+        (以下、この画面を「トップメニュー」と呼称します)
+
+   7-3. トップメニューで1を入力してEnterキーを押下する。
+
+   7-4. "------- Converting RM maps to DMK maps --------"と"Choose an option :"が
+        表示されたら1と入力してEnterキーを押下する。
+
+   7-5. "* RM files converted in * seconds."と"Press Enter to continue"が
+        表示されたらEnterキーを押下する。
+
+   7-6. トップメニューに戻るので3を入力してEnterキーを押下する。
+
+   7-7. "Processing done in * seconds."と"Press Enter to continue"が
+        表示されたらEnterキーを押下する。
+
+   7-8. "Dialogs file ./dialogues.txt created in * seconds."と"Press Enter to continue"が
+        表示されたらEnterキーを押下する。
+
+   7-9. "Warning ! Dialogues file have been modified ! Continue your work from this new file !"
+        と"Press Enter to continue"が表示されたらEnterキーを押下する。
+
+   7-10. トップメニューに戻るので4を入力してEnterキーを押下する。
+
+   7-11. "------- Converting DMK maps to RM maps --------"と"Choose an option :"が
+         表示されたら1と入力してEnterキーを押下する。
+
+   7-12. "* RM files converted in * seconds."と"Press Enter to continue"が
+         表示されたらEnterキーを押下する。
+
+   7-13. トップメニューに戻るので0を入力してEnterキーを押下する。
+
+8. DreaMakerの操作が終わると、自動的に翻訳の反映処理が続き、日本語化が完了します。
+
+
+■ エラーが出た場合
+
+ターミナルに表示された内容をコピーして、下記のいずれかの方法でご報告ください。
+
+- X: @ilovenamichang 宛にご連絡ください
+  https://x.com/ilovenamichang
+
+- 本リポジトリのGitHub Issuesにご報告ください
+  https://github.com/izayoi256/impostor-factory-translation/issues
