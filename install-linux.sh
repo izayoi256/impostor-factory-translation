@@ -28,7 +28,7 @@ if [ ! -d "Data" ]; then
 fi
 
 \cp -f dialogues.dist.txt dialogues.txt
-echo "この先は英語表示になります。同梱の\"DreaMaker操作手順.txt\"を読みながら操作してください。"
+echo "この先は英語表示になります。同梱の\"インストール手順(Linux).txt\"の後半に書かれている操作方法を見ながら進めてください。"
 read -p "Enterを押して続行" _
 wine DreaMaker_XP-v4.9.3.exe
 
@@ -44,7 +44,7 @@ mv Data Graphics ..
 if [ -f "../mkxp.conf" ]; then
   \cp -n ../mkxp.conf ../mkxp.conf.bak
 fi
-\cp -f ../mkxp.dist.conf ../mkxp.conf
+\cp -f ../resources/mkxp.dist.conf ../mkxp.conf
 
 if [ -f "../${rgssad}" ]; then
   rm -f "../${rgssad}.bak"
