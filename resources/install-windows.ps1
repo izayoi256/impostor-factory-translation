@@ -32,7 +32,7 @@ function Find-ImpostorFactoryPath {
       $installDirMatch = [regex]::Match($manifestContent, '"installdir"\s*"([^"]+)"');
       if ($installDirMatch.Success) {
         $candidate = Join-Path $lib "steamapps\common\$($installDirMatch.Groups[1].Value)\Impostor Factory";
-        if (Test-Path (Join-Path $candidate "Game.rgssad") -or Test-Path (Join-Path $candidate "Game.rgssad.bak")) {
+        if ((Test-Path (Join-Path $candidate "Game.rgssad")) -or (Test-Path (Join-Path $candidate "Game.rgssad.bak"))) {
           return $candidate;
         }
       }
@@ -53,7 +53,11 @@ Write-Host "ログを `"${logPath}`" に保存します。不具合が起きた場合は報告の際に添
 Start-Transcript -Path $logPath -Force | Out-Null;
 
 try {
-  $gamePath = Find-ImpostorFactoryPath;
+  try {
+    $gamePath = Find-ImpostorFactoryPath;
+  } catch {
+    $gamePath = $null;
+  }
   if (${gamePath}) {
     Write-Host "Impostor Factoryのインストール先を検出しました: ${gamePath}";
   } else {
